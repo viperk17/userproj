@@ -1,12 +1,14 @@
 from django.shortcuts import render, redirect
 
+# password for test user is Qwerty@1
+
 # Create your views here.
 def index(request):
-    render(request, 'index.html')
+    return render(request, 'index.html')
 
 def login(request):
-    render(request, 'login.html')
+    return render(request, 'login.html')
 
 def logout(request):
-    render(request, 'logout.html')
+    return render(request, 'logout.html')
  
