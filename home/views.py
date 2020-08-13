@@ -13,7 +13,7 @@ def login(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
         #check if user has entered the correct information
-        user = authenticate(username='viper', password='viper')
+        user = authenticate(username=username, password=password)
     return render(request, 'login.html')
 
 def logout(request):
